@@ -26,7 +26,7 @@ data_summary <- function(x) {
 
 
 ## IM
-dat <- read.table('RNA-seq_data/Challenge_2_RNA-Seq_Data.txt',header = T, sep = "\t");
+dat <- read.table('data/RNA-seq_data/Challenge_2_RNA-Seq_Data.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -55,7 +55,7 @@ scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,0.5))
 
 p <- ggarrange(x1,x2,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_RNA-Seq_Data_IM",".pdf"), 
+ggsave(filename = paste0("output/fig_RNA-Seq_Data_IM",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -88,7 +88,7 @@ scale_y_continuous(limits=c(0, 6), breaks = seq(0,6,2))
 
 p <- ggarrange(x3,x4,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_RNA-Seq_Data_ACVC",".pdf"), 
+ggsave(filename = paste0("output/fig_RNA-Seq_Data_ACVC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -117,7 +117,7 @@ scale_y_continuous(limits=c(0.4, 1), breaks = seq(0.4,1,0.2))
 
 p <- ggarrange(x5,x6,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_RNA-Seq_Data_CM",".pdf"), 
+ggsave(filename = paste0("output/fig_RNA-Seq_Data_CM",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -151,7 +151,7 @@ scale_y_continuous(limits=c(7, 10), breaks = seq(7,10,1))
 
 p <- ggarrange(x7,x8,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_RNA-Seq_Data_ACC",".pdf"), 
+ggsave(filename = paste0("output/fig_RNA-Seq_Data_ACC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -182,7 +182,7 @@ scale_y_continuous(limits=c(0, 0.015), breaks = seq(0,0.015,0.005))
 
 p <- ggarrange(x9,x10,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_RNA-Seq_Data_RE",".pdf"), 
+ggsave(filename = paste0("output/fig_RNA-Seq_Data_RE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -194,7 +194,7 @@ ggsave(filename = paste0("fig_RNA-Seq_Data_RE",".pdf"),
 
 
 ## Cell mixing experiment
-dat <- read.table('Cell_mixing_experiment/Challenge_2_Cell_mixing_experiment.txt',header = T, sep = "\t");
+dat <- read.table('data/Cell_mixing_experiment/Challenge_2_Cell_mixing_experiment.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -224,7 +224,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x11,x12,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Cell_mixing_experiment_SCC",".pdf"), 
+ggsave(filename = paste0("output/fig_Cell_mixing_experiment_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -256,7 +256,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x13,x14,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Cell_mixing_experiment_MRD",".pdf"), 
+ggsave(filename = paste0("output/fig_Cell_mixing_experiment_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -287,7 +287,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x15,x16,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Cell_mixing_experiment_NRMSE",".pdf"), 
+ggsave(filename = paste0("output/fig_Cell_mixing_experiment_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -305,7 +305,7 @@ ggsave(filename = paste0("fig_Cell_mixing_experiment_NRMSE",".pdf"),
 
 
 ## SIRV data
-dat <- read.table('SIRV-set4_data/Challenge_2_SIRV_MRD_SCC_NRMSE_metrics.txt',header = T, sep = "\t");
+dat <- read.table('data/SIRV-set4_data/Challenge_2_SIRV_MRD_SCC_NRMSE_metrics.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -336,7 +336,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x17,x18,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_SIRV_SCC",".pdf"), 
+ggsave(filename = paste0("output/fig_SIRV_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -369,7 +369,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x19,x20,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_SIRV_MRD",".pdf"), 
+ggsave(filename = paste0("output/fig_SIRV_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -399,7 +399,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x21,x22,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_SIRV_NRMSE",".pdf"), 
+ggsave(filename = paste0("output/fig_SIRV_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -411,7 +411,7 @@ ggsave(filename = paste0("fig_SIRV_NRMSE",".pdf"),
 
 
 ## ERCC_PET_metric
-dat <- read.table('SIRV-set4_data/Challenge_2_ERCC_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('data/SIRV-set4_data/Challenge_2_ERCC_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -441,7 +441,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x23,x24,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_ERCC_PET",".pdf"), 
+ggsave(filename = paste0("output/fig_ERCC_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -451,7 +451,7 @@ ggsave(filename = paste0("fig_ERCC_PET",".pdf"),
 
 
 ## Long_SIRV_PET_metric
-dat <- read.table('SIRV-set4_data/Challenge_2_Long_SIRV_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('data/SIRV-set4_data/Challenge_2_Long_SIRV_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -481,7 +481,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x25,x26,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Long_SIRV_PET",".pdf"), 
+ggsave(filename = paste0("output/fig_Long_SIRV_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -493,7 +493,7 @@ ggsave(filename = paste0("fig_Long_SIRV_PET",".pdf"),
 
 
 ## SIRV_PET_metric
-dat <- read.table('SIRV-set4_data/Challenge_2_SIRV_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('data/SIRV-set4_data/Challenge_2_SIRV_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -523,7 +523,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x27,x28,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_SIRV_PET",".pdf"), 
+ggsave(filename = paste0("output/fig_SIRV_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -540,7 +540,7 @@ ggsave(filename = paste0("fig_SIRV_PET",".pdf"),
 
 
 ## Simulation data SCC
-dat <- read.table('Simulation_data/Challenge_2_Simulation_Metrics.txt',header = T, sep = "\t");
+dat <- read.table('data/Simulation_data/Challenge_2_Simulation_Metrics.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -573,7 +573,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x29,x30,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Simulation_Data_SCC",".pdf"), 
+ggsave(filename = paste0("output/fig_Simulation_Data_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -603,7 +603,7 @@ ylab('MRD') +
 theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limits=c(0.04, 0.5), breaks = seq(0.04,0.5,0.23), oob = rescale_none) 
 p <- ggarrange(x31,x32,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Simulation_Data_MRD",".pdf"), 
+ggsave(filename = paste0("output/fig_Simulation_Data_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -634,7 +634,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x33,x34,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("fig_Simulation_Data_NRMSE",".pdf"), 
+ggsave(filename = paste0("output/fig_Simulation_Data_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -644,7 +644,7 @@ ggsave(filename = paste0("fig_Simulation_Data_NRMSE",".pdf"),
 
 ## Ranking for each metrics
 
-dat <- read.table('Ranking_for_each_metrics/tools.txt',header = FALSE, sep = "\t");
+dat <- read.table('data/Ranking_for_each_metrics/tools.txt',header = FALSE, sep = "\t");
 head(dat)
 
 colorset = c("#873600","#BA4A00","#DC7633","#EDBB99");
@@ -660,7 +660,7 @@ x35 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
     scale_x_discrete(labels = c("IM_real_data","ACVC_real_data","CM_real_data","ACC_real_data","RE_real_data","MRD_cell_mixing","NRMSE_cell_mixing","SCC_cell_mixing","MRD_SIRV","NRMSE_SIRV","SCC_SIRV","PET_SIRV","PET_Long_SIRV","PET_ERCC","MRD_simulation","NRMSE_simulation","SCC_simulation"))
 
 
-dat <- read.table('Ranking_for_each_metrics/protocols_platforms.txt',header = FALSE, sep = "\t");
+dat <- read.table('data/Ranking_for_each_metrics/protocols_platforms.txt',header = FALSE, sep = "\t");
 head(dat)
 
 x36 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
@@ -676,7 +676,7 @@ x36 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
 
 p1 <- ggarrange(x35,x36,ncol = 2, align = "v")
 
-ggsave(filename = paste0("fig_Ranking",".pdf"), 
+ggsave(filename = paste0("output/fig_Ranking",".pdf"), 
            plot =  p1, 
            width=32, 
            height=8,
@@ -687,7 +687,7 @@ ggsave(filename = paste0("fig_Ranking",".pdf"),
 ## Evaluation of quantification tools with respect to multiple transcript features
 
 ## isoform abundance
-dat1 <- read.table('Evaluation_with_multiple_transcript_features/3_true_abund.tsv',header = F, sep = "\t");
+dat1 <- read.table('data/Evaluation_with_multiple_transcript_features/3_true_abund.tsv',header = F, sep = "\t");
 head(dat1)
 
 rownames(dat1) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -699,7 +699,7 @@ pheatmap(dat1[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Kvalue
-dat2 <- read.table('Evaluation_with_multiple_transcript_features/3_K_value.tsv',header = F, sep = "\t");
+dat2 <- read.table('data/Evaluation_with_multiple_transcript_features/3_K_value.tsv',header = F, sep = "\t");
 head(dat2)
 
 rownames(dat2) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -712,7 +712,7 @@ pheatmap(dat2[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE,  show
 
 
 ## Iso_num
-dat3 <- read.table('Evaluation_with_multiple_transcript_features/3_num_isoforms.tsv',header = F, sep = "\t");
+dat3 <- read.table('data/Evaluation_with_multiple_transcript_features/3_num_isoforms.tsv',header = F, sep = "\t");
 head(dat3)
 
 rownames(dat3) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -724,7 +724,7 @@ pheatmap(dat3[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Exon_num
-dat4 <- read.table('Evaluation_with_multiple_transcript_features/3_num_exons.tsv',header = F, sep = "\t");
+dat4 <- read.table('data/Evaluation_with_multiple_transcript_features/3_num_exons.tsv',header = F, sep = "\t");
 head(dat4)
 
 rownames(dat4) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -736,7 +736,7 @@ pheatmap(dat4[,1:4], legend = T, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Isoform length
-dat5 <- read.table('Evaluation_with_multiple_transcript_features/3_isoform_length.tsv',header = F, sep = "\t");
+dat5 <- read.table('data/Evaluation_with_multiple_transcript_features/3_isoform_length.tsv',header = F, sep = "\t");
 head(dat5)
 
 rownames(dat5) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -763,7 +763,7 @@ x5 = as.ggplot(x5)
 
 plot_tmp <- plot_grid(plot_grid(x1,x2,x3,x4,x5,ncol=5),nrow=1)
 
-ggsave(filename = paste0("fig_heatmap_evaluation_multiple_transcript_features",".pdf"), 
+ggsave(filename = paste0("output/fig_heatmap_evaluation_multiple_transcript_features",".pdf"), 
            plot =  plot_tmp, 
            width=90, 
            height=18,

@@ -20,6 +20,7 @@ packages <- c(
   "devtools",
   "dplyr",
   "ggplot2",
+  "ggpointdensity",
   "ggprism",
   "ggpubr",
   "ggridges",
