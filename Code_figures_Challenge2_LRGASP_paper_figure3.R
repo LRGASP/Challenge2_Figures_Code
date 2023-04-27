@@ -24,6 +24,8 @@ data_summary <- function(x) {
    return(c(y=m,ymin=ymin,ymax=ymax))
 }
 
+outdir = "output/main"
+dir.create(outdir, recursive=TRUE, showWarnings=FALSE)
 
 ## IM
 dat <- read.table('data/RNA-seq_data/Challenge_2_RNA-Seq_Data.txt',header = T, sep = "\t");
@@ -55,7 +57,7 @@ scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,0.5))
 
 p <- ggarrange(x1,x2,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_RNA-Seq_Data_IM",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_IM",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -88,7 +90,7 @@ scale_y_continuous(limits=c(0, 6), breaks = seq(0,6,2))
 
 p <- ggarrange(x3,x4,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_RNA-Seq_Data_ACVC",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_ACVC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -117,7 +119,7 @@ scale_y_continuous(limits=c(0.4, 1), breaks = seq(0.4,1,0.2))
 
 p <- ggarrange(x5,x6,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_RNA-Seq_Data_CM",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_CM",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -151,7 +153,7 @@ scale_y_continuous(limits=c(7, 10), breaks = seq(7,10,1))
 
 p <- ggarrange(x7,x8,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_RNA-Seq_Data_ACC",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_ACC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -182,7 +184,7 @@ scale_y_continuous(limits=c(0, 0.015), breaks = seq(0,0.015,0.005))
 
 p <- ggarrange(x9,x10,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_RNA-Seq_Data_RE",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_RE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -224,7 +226,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x11,x12,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Cell_mixing_experiment_SCC",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Cell_mixing_experiment_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -256,7 +258,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x13,x14,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Cell_mixing_experiment_MRD",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Cell_mixing_experiment_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -287,7 +289,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x15,x16,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Cell_mixing_experiment_NRMSE",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Cell_mixing_experiment_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -336,7 +338,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x17,x18,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_SIRV_SCC",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_SIRV_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -369,7 +371,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x19,x20,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_SIRV_MRD",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_SIRV_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -399,7 +401,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x21,x22,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_SIRV_NRMSE",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_SIRV_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -441,7 +443,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x23,x24,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_ERCC_PET",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_ERCC_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -481,7 +483,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x25,x26,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Long_SIRV_PET",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Long_SIRV_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -523,7 +525,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x27,x28,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_SIRV_PET",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_SIRV_PET",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -573,7 +575,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x29,x30,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Simulation_Data_SCC",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Simulation_Data_SCC",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -603,7 +605,7 @@ ylab('MRD') +
 theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limits=c(0.04, 0.5), breaks = seq(0.04,0.5,0.23), oob = rescale_none) 
 p <- ggarrange(x31,x32,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Simulation_Data_MRD",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Simulation_Data_MRD",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -634,7 +636,7 @@ theme(axis.text.x=element_text(angle = 90,hjust = 1)) + scale_y_continuous(limit
 
 p <- ggarrange(x33,x34,nrow = 1, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_Simulation_Data_NRMSE",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Simulation_Data_NRMSE",".pdf"), 
            plot =  p, 
            width=30, 
            height=15,
@@ -676,7 +678,7 @@ x36 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
 
 p1 <- ggarrange(x35,x36,ncol = 2, align = "v")
 
-ggsave(filename = paste0("output/fig_Ranking",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_Ranking",".pdf"), 
            plot =  p1, 
            width=32, 
            height=8,
@@ -763,7 +765,7 @@ x5 = as.ggplot(x5)
 
 plot_tmp <- plot_grid(plot_grid(x1,x2,x3,x4,x5,ncol=5),nrow=1)
 
-ggsave(filename = paste0("output/fig_heatmap_evaluation_multiple_transcript_features",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_heatmap_evaluation_multiple_transcript_features",".pdf"), 
            plot =  plot_tmp, 
            width=90, 
            height=18,

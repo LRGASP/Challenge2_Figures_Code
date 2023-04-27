@@ -16,8 +16,10 @@ library(scales)
 library(ggthemes)
 library(ggridges)
 library(pheatmap)
-#install.packages('ggpointdensity');
 library(ggpointdensity)
+
+outdir = "output/supplementary"
+dir.create(outdir, recursive=TRUE, showWarnings=FALSE)
 
 ## CV curves-------------------------------------------------------------------------------------------
 
@@ -1603,7 +1605,7 @@ x2 <- ggarrange(H1_hESC,H1_DE,ncol = 2, align = "v",hjust=0)
 
 fig_merge <- ggarrange(x1,x2,nrow = 2, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_COV_curves",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_COV_curves",".pdf"), 
            plot =  fig_merge, 
            width=45, 
            height=40,
@@ -3189,7 +3191,7 @@ x2 <- ggarrange(H1_hESC,H1_DE,ncol = 2, align = "v",hjust=0)
 
 fig_merge <- ggarrange(x1,x2,nrow = 2, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_CM_curves",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_CM_curves",".pdf"), 
            plot =  fig_merge, 
            width=45, 
            height=40,
@@ -3646,7 +3648,7 @@ p7 <- ggarrange(NULL,NULL,NULL,NULL,NULL,NULL,NULL,x28,ncol = 8, align = "v",hju
 
 fig_merge <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_mix_experiment_scatter",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_mix_experiment_scatter",".pdf"), 
            plot =  fig_merge, 
            width=40, 
            height=40,
@@ -5001,7 +5003,7 @@ x2 <- ggarrange(H1_hESC,H1_DE,ncol = 2, align = "v",hjust=0)
 
 fig_merge <- ggarrange(x1,x2,nrow = 2, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_SIRV_scatter",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_SIRV_scatter",".pdf"), 
            plot =  fig_merge, 
            width=45, 
            height=40,
@@ -5446,7 +5448,7 @@ p6 <- ggarrange(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,x1,ncol = 9, align = "v"
 
 fig_merge <- ggarrange(p1,p2,p3,p4,p5,p6,nrow = 6, align = "v",hjust=0)
 
-ggsave(filename = paste0("output/fig_simulation_scatter",".pdf"), 
+ggsave(filename = paste0(outdir, "/fig_simulation_scatter",".pdf"), 
            plot =  fig_merge, 
            width=48.99, 
            height=36.9,
