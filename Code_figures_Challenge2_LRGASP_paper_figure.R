@@ -28,7 +28,7 @@ outdir = "output/main"
 dir.create(outdir, recursive=TRUE, showWarnings=FALSE)
 
 ## IM
-dat <- read.table('data/RNA-seq_data/Challenge_2_RNA-Seq_Data.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/Challenge_2_RNA-Seq_Data.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -196,7 +196,7 @@ ggsave(filename = paste0(outdir, "/fig_RNA-Seq_Data_RE",".pdf"),
 
 
 ## Cell mixing experiment
-dat <- read.table('data/Cell_mixing_experiment/Challenge_2_Cell_mixing_experiment.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Challenge_2_Cell_mixing_experiment.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -307,7 +307,7 @@ ggsave(filename = paste0(outdir, "/fig_Cell_mixing_experiment_NRMSE",".pdf"),
 
 
 ## SIRV data
-dat <- read.table('data/SIRV-set4_data/Challenge_2_SIRV_MRD_SCC_NRMSE_metrics.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/Challenge_2_SIRV_MRD_SCC_NRMSE_metrics.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -413,7 +413,7 @@ ggsave(filename = paste0(outdir, "/fig_SIRV_NRMSE",".pdf"),
 
 
 ## ERCC_PET_metric
-dat <- read.table('data/SIRV-set4_data/Challenge_2_ERCC_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/Challenge_2_ERCC_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -453,7 +453,7 @@ ggsave(filename = paste0(outdir, "/fig_ERCC_PET",".pdf"),
 
 
 ## Long_SIRV_PET_metric
-dat <- read.table('data/SIRV-set4_data/Challenge_2_Long_SIRV_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/Challenge_2_Long_SIRV_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -495,7 +495,7 @@ ggsave(filename = paste0(outdir, "/fig_Long_SIRV_PET",".pdf"),
 
 
 ## SIRV_PET_metric
-dat <- read.table('data/SIRV-set4_data/Challenge_2_SIRV_PET_metric.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/Challenge_2_SIRV_PET_metric.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","CapTrap_PacBio","CapTrap_ONT","R2C2_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -542,7 +542,7 @@ ggsave(filename = paste0(outdir, "/fig_SIRV_PET",".pdf"),
 
 
 ## Simulation data SCC
-dat <- read.table('data/Simulation_data/Challenge_2_Simulation_Metrics.txt',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/Challenge_2_Simulation_Metrics.txt',header = T, sep = "\t");
 dat$Protocols_Platforms <- factor(dat$Protocols_Platforms,levels=c("cDNA_PacBio","cDNA_ONT","dRNA_ONT","cDNA_Illumina"))
 dat$Tools <- factor(dat$Tools,levels=c("Bambu","FLAIR","FLAMES","IsoQuant","IsoTools","TALON","NanoSim","RSEM"));
 head(dat)
@@ -646,7 +646,7 @@ ggsave(filename = paste0(outdir, "/fig_Simulation_Data_NRMSE",".pdf"),
 
 ## Ranking for each metrics
 
-dat <- read.table('data/Ranking_for_each_metrics/tools.txt',header = FALSE, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Ranking_for_each_metrics/tools.txt',header = FALSE, sep = "\t");
 head(dat)
 
 colorset = c("#873600","#BA4A00","#DC7633","#EDBB99");
@@ -662,7 +662,7 @@ x35 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
     scale_x_discrete(labels = c("IM_real_data","ACVC_real_data","CM_real_data","ACC_real_data","RE_real_data","MRD_cell_mixing","NRMSE_cell_mixing","SCC_cell_mixing","MRD_SIRV","NRMSE_SIRV","SCC_SIRV","PET_SIRV","PET_Long_SIRV","PET_ERCC","MRD_simulation","NRMSE_simulation","SCC_simulation"))
 
 
-dat <- read.table('data/Ranking_for_each_metrics/protocols_platforms.txt',header = FALSE, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Ranking_for_each_metrics/protocols_platforms.txt',header = FALSE, sep = "\t");
 head(dat)
 
 x36 <- ggplot(dat,aes(x=V4,y=V1,color=V2)) + geom_point(size=4) +
@@ -689,7 +689,7 @@ ggsave(filename = paste0(outdir, "/fig_Ranking",".pdf"),
 ## Evaluation of quantification tools with respect to multiple transcript features
 
 ## isoform abundance
-dat1 <- read.table('data/Evaluation_with_multiple_transcript_features/3_true_abund.tsv',header = F, sep = "\t");
+dat1 <- read.table('Challenge2_Figures_Data/Evaluation_with_multiple_transcript_features/3_true_abund.tsv',header = F, sep = "\t");
 head(dat1)
 
 rownames(dat1) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -701,7 +701,7 @@ pheatmap(dat1[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Kvalue
-dat2 <- read.table('data/Evaluation_with_multiple_transcript_features/3_K_value.tsv',header = F, sep = "\t");
+dat2 <- read.table('Challenge2_Figures_Data/Evaluation_with_multiple_transcript_features/3_K_value.tsv',header = F, sep = "\t");
 head(dat2)
 
 rownames(dat2) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -714,7 +714,7 @@ pheatmap(dat2[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE,  show
 
 
 ## Iso_num
-dat3 <- read.table('data/Evaluation_with_multiple_transcript_features/3_num_isoforms.tsv',header = F, sep = "\t");
+dat3 <- read.table('Challenge2_Figures_Data/Evaluation_with_multiple_transcript_features/3_num_isoforms.tsv',header = F, sep = "\t");
 head(dat3)
 
 rownames(dat3) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -726,7 +726,7 @@ pheatmap(dat3[,1:4], legend = F, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Exon_num
-dat4 <- read.table('data/Evaluation_with_multiple_transcript_features/3_num_exons.tsv',header = F, sep = "\t");
+dat4 <- read.table('Challenge2_Figures_Data/Evaluation_with_multiple_transcript_features/3_num_exons.tsv',header = F, sep = "\t");
 head(dat4)
 
 rownames(dat4) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")
@@ -738,7 +738,7 @@ pheatmap(dat4[,1:4], legend = T, cluster_col = FALSE, cluster_row = FALSE, show_
 
 
 ## Isoform length
-dat5 <- read.table('data/Evaluation_with_multiple_transcript_features/3_isoform_length.tsv',header = F, sep = "\t");
+dat5 <- read.table('Challenge2_Figures_Data/Evaluation_with_multiple_transcript_features/3_isoform_length.tsv',header = F, sep = "\t");
 head(dat5)
 
 rownames(dat5) = c("RSEM","IsoTools","TALON","IsoQuant","Bambu","FLAIR")

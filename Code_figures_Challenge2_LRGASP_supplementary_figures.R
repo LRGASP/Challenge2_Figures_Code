@@ -24,7 +24,7 @@ dir.create(outdir, recursive=TRUE, showWarnings=FALSE)
 ## CV curves-------------------------------------------------------------------------------------------
 
 ## H1-mix CapTrap ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -36,7 +36,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -48,7 +48,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -59,7 +59,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -71,7 +71,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -86,7 +86,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust=0
 
 
 ## H1-mix CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -98,7 +98,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -110,7 +110,7 @@ x7 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -122,7 +122,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -133,7 +133,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -149,7 +149,7 @@ p2 <- ggarrange(x6,x7,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjust=
 
 
 ## H1-mix cDNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -161,7 +161,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -173,7 +173,7 @@ x12 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -184,7 +184,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -196,7 +196,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -208,7 +208,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -223,7 +223,7 @@ p3 <- ggarrange(x11,x12,x13,x14,x15,NULL,x16,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-mix cDNA PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -234,7 +234,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -245,7 +245,7 @@ x18 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -257,7 +257,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -268,7 +268,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -279,7 +279,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -294,7 +294,7 @@ p4 <- ggarrange(x17,x18,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-mix dRNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -305,7 +305,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -317,7 +317,7 @@ x24 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -329,7 +329,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -341,7 +341,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -352,7 +352,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -363,7 +363,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -378,7 +378,7 @@ p5 <- ggarrange(x23,x24,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-mix R2C2 ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -390,7 +390,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -401,7 +401,7 @@ x31 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -413,7 +413,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -427,7 +427,7 @@ x33 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 p6 <- ggarrange(x30,x31,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 ## H1-mix cDNA Illumina
-dat <- read.table('data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-mix_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-mix_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -444,7 +444,7 @@ H1_mix <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 
 ## WTC11 CapTrap ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -456,7 +456,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -468,7 +468,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -479,7 +479,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -491,7 +491,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -506,7 +506,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust=0
 
 
 ## WTC11 CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -518,7 +518,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -530,7 +530,7 @@ x7 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -542,7 +542,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -553,7 +553,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -569,7 +569,7 @@ p2 <- ggarrange(x6,x7,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjust=
 
 
 ## WTC11 cDNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -581,7 +581,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -593,7 +593,7 @@ x12 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -604,7 +604,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -616,7 +616,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -628,7 +628,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -643,7 +643,7 @@ p3 <- ggarrange(x11,x12,x13,x14,x15,NULL,x16,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## WTC11 cDNA PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -654,7 +654,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -665,7 +665,7 @@ x18 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -677,7 +677,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -688,7 +688,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -699,7 +699,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -714,7 +714,7 @@ p4 <- ggarrange(x17,x18,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## WTC11 dRNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -725,7 +725,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -737,7 +737,7 @@ x24 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -749,7 +749,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -761,7 +761,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -772,7 +772,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -783,7 +783,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -798,7 +798,7 @@ p5 <- ggarrange(x23,x24,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hjus
 
 
 ## WTC11 R2C2 ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -810,7 +810,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/BambuLR_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/BambuLR_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -821,7 +821,7 @@ x31 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -833,7 +833,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -848,7 +848,7 @@ p6 <- ggarrange(x30,x31,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",h
 
 
 ## WTC11 cDNA Illumina
-dat <- read.table('data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_WTC11_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_WTC11_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -865,7 +865,7 @@ WTC11 <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 
 ## H1-hESC CapTrap ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -877,7 +877,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -888,7 +888,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -900,7 +900,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -915,7 +915,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 ## H1-hESC CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -928,7 +928,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -940,7 +940,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -951,7 +951,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -967,7 +967,7 @@ p2 <- ggarrange(x6,NULL,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-hESC cDNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -980,7 +980,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -991,7 +991,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1003,7 +1003,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1015,7 +1015,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1026,7 +1026,7 @@ x16 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_cDNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1041,7 +1041,7 @@ p3 <- ggarrange(x11,NULL,x13,x14,x15,NULL,x16,x35,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-hESC cDNA PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1053,7 +1053,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1065,7 +1065,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1076,7 +1076,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1087,7 +1087,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1102,7 +1102,7 @@ p4 <- ggarrange(x17,NULL,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hj
 
 
 ## H1-hESC dRNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1114,7 +1114,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1126,7 +1126,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1138,7 +1138,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1149,7 +1149,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1160,7 +1160,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1175,7 +1175,7 @@ p5 <- ggarrange(x23,NULL,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-hESC R2C2 ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1188,7 +1188,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1200,7 +1200,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1215,7 +1215,7 @@ p6 <- ggarrange(x30,NULL,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",
 
 
 ## H1-hESC cDNA Illumina
-dat <- read.table('data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-hESC_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-hESC_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1235,7 +1235,7 @@ H1_hESC <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 
 ## H1-DE CapTrap ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1248,7 +1248,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1259,7 +1259,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1271,7 +1271,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1286,7 +1286,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 ## H1-DE CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1298,7 +1298,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1310,7 +1310,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1321,7 +1321,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_CapTrap_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1337,7 +1337,7 @@ p2 <- ggarrange(x6,NULL,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-DE cDNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1349,7 +1349,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1360,7 +1360,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1372,7 +1372,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1384,7 +1384,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1395,7 +1395,7 @@ x16 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_cDNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1410,7 +1410,7 @@ p3 <- ggarrange(x11,NULL,x13,x14,x15,NULL,x16,x35,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-DE cDNA PacBio
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1422,7 +1422,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1434,7 +1434,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1445,7 +1445,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoTools_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1456,7 +1456,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_cDNA_PacBio_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1471,7 +1471,7 @@ p4 <- ggarrange(x17,NULL,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hj
 
 
 ## H1-DE dRNA ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1484,7 +1484,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAIR_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1496,7 +1496,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/FLAMES_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1508,7 +1508,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1519,7 +1519,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1530,7 +1530,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_y_continuous(limits=c(0, 1.5), breaks = seq(0,1.5,1.5)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/NanoSim_dRNA_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1545,7 +1545,7 @@ p5 <- ggarrange(x23,NULL,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-DE R2C2 ONT
-dat <- read.table('data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/Bambu_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1558,7 +1558,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/IsoQuant_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1570,7 +1570,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V1,y = V2)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9))
 
 
-dat <- read.table('data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/LAPA_R2C2_ONT_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1585,7 +1585,7 @@ p6 <- ggarrange(x30,NULL,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",
 
 
 ## H1-DE cDNA Illumina
-dat <- read.table('data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-DE_COV.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/COV_plot_data/RSEM_cDNA_Illumina_H1-DE_COV.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1615,7 +1615,7 @@ ggsave(filename = paste0(outdir, "/fig_COV_curves",".pdf"),
 
 ## CM curves-------------------------------------------------------------------------------------------
 ## H1-mix CapTrap ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1627,7 +1627,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1639,7 +1639,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1650,7 +1650,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1662,7 +1662,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1677,7 +1677,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust=0
 
 
 ## H1-mix CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1689,7 +1689,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1701,7 +1701,7 @@ x7 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1713,7 +1713,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1724,7 +1724,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1740,7 +1740,7 @@ p2 <- ggarrange(x6,x7,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjust=
 
 
 ## H1-mix cDNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1752,7 +1752,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1764,7 +1764,7 @@ x12 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1775,7 +1775,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1787,7 +1787,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1799,7 +1799,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1814,7 +1814,7 @@ p3 <- ggarrange(x11,x12,x13,x14,x15,NULL,x16,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-mix cDNA PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1825,7 +1825,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1836,7 +1836,7 @@ x18 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1848,7 +1848,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1859,7 +1859,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1870,7 +1870,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1885,7 +1885,7 @@ p4 <- ggarrange(x17,x18,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-mix dRNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1896,7 +1896,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1908,7 +1908,7 @@ x24 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1920,7 +1920,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1932,7 +1932,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1943,7 +1943,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1954,7 +1954,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1969,7 +1969,7 @@ p5 <- ggarrange(x23,x24,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-mix R2C2 ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1981,7 +1981,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -1992,7 +1992,7 @@ x31 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2004,7 +2004,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2018,7 +2018,7 @@ x33 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
 p6 <- ggarrange(x30,x31,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 ## H1-mix cDNA Illumina
-dat <- read.table('data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-mix_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-mix_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2035,7 +2035,7 @@ H1_mix <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 
 ## WTC11 CapTrap ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2047,7 +2047,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2059,7 +2059,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2070,7 +2070,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2082,7 +2082,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2097,7 +2097,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust=0
 
 
 ## WTC11 CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2109,7 +2109,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2121,7 +2121,7 @@ x7 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2133,7 +2133,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2144,7 +2144,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2160,7 +2160,7 @@ p2 <- ggarrange(x6,x7,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjust=
 
 
 ## WTC11 cDNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2172,7 +2172,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2184,7 +2184,7 @@ x12 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2195,7 +2195,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2207,7 +2207,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2219,7 +2219,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2234,7 +2234,7 @@ p3 <- ggarrange(x11,x12,x13,x14,x15,NULL,x16,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## WTC11 cDNA PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2245,7 +2245,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2256,7 +2256,7 @@ x18 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2268,7 +2268,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2279,7 +2279,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2290,7 +2290,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2305,7 +2305,7 @@ p4 <- ggarrange(x17,x18,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hju
 
 
 ## WTC11 dRNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2316,7 +2316,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2328,7 +2328,7 @@ x24 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2340,7 +2340,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2352,7 +2352,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2363,7 +2363,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2374,7 +2374,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2389,7 +2389,7 @@ p5 <- ggarrange(x23,x24,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hjus
 
 
 ## WTC11 R2C2 ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2401,7 +2401,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/BambuLR_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/BambuLR_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2412,7 +2412,7 @@ x31 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2424,7 +2424,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2439,7 +2439,7 @@ p6 <- ggarrange(x30,x31,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",h
 
 
 ## WTC11 cDNA Illumina
-dat <- read.table('data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_WTC11_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_WTC11_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2456,7 +2456,7 @@ WTC11 <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 
 ## H1-hESC CapTrap ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2468,7 +2468,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2479,7 +2479,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2491,7 +2491,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2506,7 +2506,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 ## H1-hESC CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2518,7 +2518,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2530,7 +2530,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2541,7 +2541,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2557,7 +2557,7 @@ p2 <- ggarrange(x6,NULL,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-hESC cDNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2569,7 +2569,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2580,7 +2580,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2592,7 +2592,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2604,7 +2604,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2615,7 +2615,7 @@ x16 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_cDNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2630,7 +2630,7 @@ p3 <- ggarrange(x11,NULL,x13,x14,x15,NULL,x16,x35,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-hESC cDNA PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2642,7 +2642,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2654,7 +2654,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2665,7 +2665,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2676,7 +2676,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2691,7 +2691,7 @@ p4 <- ggarrange(x17,NULL,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hj
 
 
 ## H1-hESC dRNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2703,7 +2703,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2715,7 +2715,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2727,7 +2727,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2738,7 +2738,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2749,7 +2749,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2764,7 +2764,7 @@ p5 <- ggarrange(x23,NULL,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-hESC R2C2 ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2775,7 +2775,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2787,7 +2787,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2802,7 +2802,7 @@ p6 <- ggarrange(x30,NULL,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",
 
 
 ## H1-hESC cDNA Illumina
-dat <- read.table('data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-hESC_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-hESC_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2821,7 +2821,7 @@ H1_hESC <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 ## CM curves-----------------------------------------------
 
 ## H1-DE CapTrap ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2834,7 +2834,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2845,7 +2845,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2857,7 +2857,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2872,7 +2872,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,x5,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 ## H1-DE CapTrap PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2884,7 +2884,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2896,7 +2896,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2907,7 +2907,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_CapTrap_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2923,7 +2923,7 @@ p2 <- ggarrange(x6,NULL,NULL,x8,x9,NULL,x10,NULL,NULL,ncol = 9, align = "v",hjus
 
 
 ## H1-DE cDNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2935,7 +2935,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2946,7 +2946,7 @@ x13 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2958,7 +2958,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2970,7 +2970,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2981,7 +2981,7 @@ x16 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_cDNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -2996,7 +2996,7 @@ p3 <- ggarrange(x11,NULL,x13,x14,x15,NULL,x16,x35,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-DE cDNA PacBio
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3008,7 +3008,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3020,7 +3020,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3031,7 +3031,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoTools_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3042,7 +3042,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_cDNA_PacBio_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3057,7 +3057,7 @@ p4 <- ggarrange(x17,NULL,x19,NULL,x20,x21,x22,NULL,NULL,ncol = 9, align = "v",hj
 
 
 ## H1-DE dRNA ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3070,7 +3070,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAIR_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3082,7 +3082,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/FLAMES_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3094,7 +3094,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3105,7 +3105,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3116,7 +3116,7 @@ x28 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_y_continuous(limits=c(0.5, 1), breaks = seq(0.5,1,0.5)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/NanoSim_dRNA_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3131,7 +3131,7 @@ p5 <- ggarrange(x23,NULL,x25,x26,x27,NULL,x28,x29,NULL,ncol = 9, align = "v",hju
 
 
 ## H1-DE R2C2 ONT
-dat <- read.table('data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/Bambu_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3144,7 +3144,7 @@ x30 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
 
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/IsoQuant_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3156,7 +3156,7 @@ x32 <- ggplot(data = dat, mapping = aes(x = V2,y = V1)) +
   scale_x_continuous(limits=c(1.1, 10), breaks = seq(1.1,10,8.9))
 
 
-dat <- read.table('data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/LAPA_R2C2_ONT_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3171,7 +3171,7 @@ p6 <- ggarrange(x30,NULL,NULL,NULL,x32,NULL,x33,NULL,NULL,ncol = 9, align = "v",
 
 
 ## H1-DE cDNA Illumina
-dat <- read.table('data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-DE_CM.txt',header = F, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/RNA-seq_data/CM_plot_data/RSEM_cDNA_Illumina_H1-DE_CM.txt',header = F, sep = "\t");
 names(dat) <- c('V1','V2','V3','V4','V5','V6');
 
 
@@ -3217,7 +3217,7 @@ ggsave(filename = paste0(outdir, "/fig_CM_curves",".pdf"),
 
 ## Scatter plot for cell mixing experiment-----------------------------------------------------------------------------
 ## CapTrap ONT
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3231,7 +3231,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.85")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x2 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3246,7 +3246,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x3 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3260,7 +3260,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.88")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_CapTrap_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x4 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3279,7 +3279,7 @@ p1 <- ggarrange(x1,NULL,x2,x3,NULL,x4,NULL,NULL,ncol = 8, align = "v",hjust=0)
 
 
 ## CapTrap PacBio
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x5 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3293,7 +3293,7 @@ x5 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.81")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x6 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3307,7 +3307,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.81")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x7 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3321,7 +3321,7 @@ x7 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.84")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_CapTrap_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x8 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3338,7 +3338,7 @@ x8 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 p2 <- ggarrange(x5,NULL,x6,x7,NULL,x8,NULL,NULL,ncol = 8, align = "v",hjust=0)
 
 ## cDNA ONT
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_cDNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_cDNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x9 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3352,7 +3352,7 @@ x9 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.55")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_cDNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_cDNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x10 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3365,7 +3365,7 @@ x10 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   scale_x_continuous(limits=c(1, 10), breaks = seq(1,10,9)) +
   ggtitle("SCC=0.84")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_cDNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_cDNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x11 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3379,7 +3379,7 @@ x11 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.76")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_cDNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_cDNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x12 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3393,7 +3393,7 @@ x12 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.88")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_cDNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_cDNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x13 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3412,7 +3412,7 @@ p3 <- ggarrange(x9,x10,x11,x12,NULL,x13,NULL,NULL,ncol = 8, align = "v",hjust=0)
 
 
 ## cDNA PacBio
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x14 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3427,7 +3427,7 @@ x14 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x15 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3442,7 +3442,7 @@ x15 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x16 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3457,7 +3457,7 @@ x16 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoTools_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoTools_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x17 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3471,7 +3471,7 @@ x17 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.85")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_cDNA_PacBio_RD.tsv',header = T, sep = "\t");
 
 
 x18 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3491,7 +3491,7 @@ p4 <- ggarrange(x14,x15,NULL,x16,x17,x18,NULL,NULL,ncol = 8, align = "v",hjust=0
 
 
 ## dRNA ONT
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x19 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3506,7 +3506,7 @@ x19 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAIR_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x20 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3520,7 +3520,7 @@ x20 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.75")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/FLAMES_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x21 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3535,7 +3535,7 @@ x21 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x22 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3549,7 +3549,7 @@ x22 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.82")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x23 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3563,7 +3563,7 @@ x23 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
   ggtitle("SCC=0.75")+theme(plot.title = element_text(size = 18, hjust = 0.5))
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/NanoSim_dRNA_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/NanoSim_dRNA_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x24 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3581,7 +3581,7 @@ p5 <- ggarrange(x19,x20,x21,x22,NULL,x23,x24,NULL,ncol = 8, align = "v",hjust=0)
 
 
 ## R2C2 ONT
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_R2C2_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/Bambu_R2C2_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x25 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3596,7 +3596,7 @@ x25 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_R2C2_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/IsoQuant_R2C2_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x26 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3611,7 +3611,7 @@ x26 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 
 
 
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_R2C2_ONT_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/LAPA_R2C2_ONT_RD.tsv',header = T, sep = "\t");
 
 
 x27 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3629,7 +3629,7 @@ x27 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) +
 p6 <- ggarrange(x25,NULL,NULL,x26,NULL,x27,NULL,NULL,ncol = 8, align = "v",hjust=0)
 
 ## cDNA Illumina
-dat <- read.table('data/Cell_mixing_experiment/Relative_error_isoform_level/RSEM_cDNA_Illumina_RD.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Cell_mixing_experiment/Relative_error_isoform_level/RSEM_cDNA_Illumina_RD.tsv',header = T, sep = "\t");
 
 
 x28 <- ggplot(data = dat, mapping = aes(x = expected_TPM,y = observed_TPM)) + 
@@ -3671,7 +3671,7 @@ get_density <- function(x, y, ...) {
 
 ## H1-mix
 # CapTrap ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3683,7 +3683,7 @@ x1 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3696,7 +3696,7 @@ x2 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3708,7 +3708,7 @@ x3 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3724,7 +3724,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 # CapTrap PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3736,7 +3736,7 @@ x5 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3749,7 +3749,7 @@ x6 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3761,7 +3761,7 @@ x7 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3777,7 +3777,7 @@ p2 <- ggarrange(x5,x6,NULL,x7,x8,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 # cDNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3789,7 +3789,7 @@ x9 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3802,7 +3802,7 @@ x10 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3815,7 +3815,7 @@ x11 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3828,7 +3828,7 @@ x12 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3845,7 +3845,7 @@ p3 <- ggarrange(x9,x10,x11,x12,x13,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # cDNA PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3858,7 +3858,7 @@ x14 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3871,7 +3871,7 @@ x15 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3883,7 +3883,7 @@ x16 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3895,7 +3895,7 @@ x17 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoTools_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoTools_H1-mix_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3911,7 +3911,7 @@ p4 <- ggarrange(x14,x15,x16,NULL,x17,x18,NULL,NULL,NULL,ncol = 9, align = "v",hj
 
 
 # dRNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3923,7 +3923,7 @@ x19 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3935,7 +3935,7 @@ x20 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3947,7 +3947,7 @@ x21 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3959,7 +3959,7 @@ x22 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_H1-mix_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3974,7 +3974,7 @@ x23 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p5 <- ggarrange(x19,x20,x21,NULL,x22,NULL,NULL,x23,NULL,ncol = 9, align = "v",hjust=0)
 
 # R2C2 ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3986,7 +3986,7 @@ x24 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -3998,7 +3998,7 @@ x25 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1-mix_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4013,7 +4013,7 @@ x26 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p6 <- ggarrange(x24,x25,NULL,NULL,x26,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 # cDNA Illumina
-dat <- read.table('data/SIRV-set4_data/raw_data/RSEM_H1-mix_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/RSEM_H1-mix_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4032,7 +4032,7 @@ H1_mix <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 ## WTC11
 # CapTrap ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4044,7 +4044,7 @@ x1 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4057,7 +4057,7 @@ x2 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4069,7 +4069,7 @@ x3 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4085,7 +4085,7 @@ p1 <- ggarrange(x1,x2,NULL,x3,x4,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 # CapTrap PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4097,7 +4097,7 @@ x5 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4110,7 +4110,7 @@ x6 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4122,7 +4122,7 @@ x7 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4138,7 +4138,7 @@ p2 <- ggarrange(x5,x6,NULL,x7,x8,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust
 
 
 # cDNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4150,7 +4150,7 @@ x9 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4163,7 +4163,7 @@ x10 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4176,7 +4176,7 @@ x11 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4189,7 +4189,7 @@ x12 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4206,7 +4206,7 @@ p3 <- ggarrange(x9,x10,x11,x12,x13,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # cDNA PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4219,7 +4219,7 @@ x14 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4232,7 +4232,7 @@ x15 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4244,7 +4244,7 @@ x16 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4256,7 +4256,7 @@ x17 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoTools_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoTools_WTC11_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4272,7 +4272,7 @@ p4 <- ggarrange(x14,x15,x16,NULL,x17,x18,NULL,NULL,NULL,ncol = 9, align = "v",hj
 
 
 # dRNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4284,7 +4284,7 @@ x19 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4296,7 +4296,7 @@ x20 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4308,7 +4308,7 @@ x21 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4320,7 +4320,7 @@ x22 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_WTC11_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4335,7 +4335,7 @@ x23 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p5 <- ggarrange(x19,x20,x21,NULL,x22,NULL,NULL,x23,NULL,ncol = 9, align = "v",hjust=0)
 
 # R2C2 ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4347,7 +4347,7 @@ x24 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_LR_annotation_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4359,7 +4359,7 @@ x25 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_WTC11_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4374,7 +4374,7 @@ x26 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p6 <- ggarrange(x24,x25,NULL,NULL,x26,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 # cDNA Illumina
-dat <- read.table('data/SIRV-set4_data/raw_data/RSEM_WTC11_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/RSEM_WTC11_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4393,7 +4393,7 @@ WTC11 <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 ## H1
 # CapTrap ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4407,7 +4407,7 @@ x1 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
 
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4419,7 +4419,7 @@ x3 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4435,7 +4435,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # CapTrap PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4448,7 +4448,7 @@ x5 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4460,7 +4460,7 @@ x7 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4476,7 +4476,7 @@ p2 <- ggarrange(x5,NULL,NULL,x7,x8,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # cDNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4490,7 +4490,7 @@ x9 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
 
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4503,7 +4503,7 @@ x11 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_H1_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_H1_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4516,7 +4516,7 @@ x12 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4528,7 +4528,7 @@ x13 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_H1_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_H1_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4545,7 +4545,7 @@ p3 <- ggarrange(x9,NULL,x11,x12,x13,NULL,NULL,xx,NULL,ncol = 9, align = "v",hjus
 
 
 # cDNA PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4560,7 +4560,7 @@ x14 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4572,7 +4572,7 @@ x16 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4584,7 +4584,7 @@ x17 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoTools_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoTools_H1_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4600,7 +4600,7 @@ p4 <- ggarrange(x14,NULL,x16,NULL,x17,x18,NULL,NULL,NULL,ncol = 9, align = "v",h
 
 
 # dRNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4613,7 +4613,7 @@ x19 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_H1_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_H1_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4625,7 +4625,7 @@ x21 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4637,7 +4637,7 @@ x22 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_H1_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_H1_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4652,7 +4652,7 @@ x23 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p5 <- ggarrange(x19,NULL,x21,NULL,x22,NULL,NULL,x23,NULL,ncol = 9, align = "v",hjust=0)
 
 # R2C2 ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_H1_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_H1_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4664,7 +4664,7 @@ x24 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_H1_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_H1_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4679,7 +4679,7 @@ x26 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p6 <- ggarrange(x24,NULL,NULL,NULL,x26,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 # cDNA Illumina
-dat <- read.table('data/SIRV-set4_data/raw_data/RSEM_H1_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/RSEM_H1_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4698,7 +4698,7 @@ H1_hESC <- ggarrange(p1,p2,p3,p4,p5,p6,p7,nrow = 7, align = "v",hjust=0)
 
 ## DE
 # CapTrap ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4711,7 +4711,7 @@ x1 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4723,7 +4723,7 @@ x3 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_CapTrap_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4739,7 +4739,7 @@ p1 <- ggarrange(x1,NULL,NULL,x3,x4,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # CapTrap PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4752,7 +4752,7 @@ x5 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4764,7 +4764,7 @@ x7 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_CapTrap_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4780,7 +4780,7 @@ p2 <- ggarrange(x5,NULL,NULL,x7,x8,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hju
 
 
 # cDNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4793,7 +4793,7 @@ x9 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized*
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_DE_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_DE_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4806,7 +4806,7 @@ x11 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAMES_DE_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAMES_DE_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4819,7 +4819,7 @@ x12 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4831,7 +4831,7 @@ x13 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_DE_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_DE_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4848,7 +4848,7 @@ p3 <- ggarrange(x9,NULL,x11,x12,x13,NULL,NULL,xx,NULL,ncol = 9, align = "v",hjus
 
 
 # cDNA PacBio
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4862,7 +4862,7 @@ x14 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4874,7 +4874,7 @@ x16 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4886,7 +4886,7 @@ x17 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoTools_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoTools_DE_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4902,7 +4902,7 @@ p4 <- ggarrange(x14,NULL,x16,NULL,x17,x18,NULL,NULL,NULL,ncol = 9, align = "v",h
 
 
 # dRNA ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4915,7 +4915,7 @@ x19 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/FLAIR_DE_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/FLAIR_DE_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4927,7 +4927,7 @@ x21 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4939,7 +4939,7 @@ x22 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_y_continuous(limits=c(0, 15), breaks = seq(0,15,15)) +
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
-dat <- read.table('data/SIRV-set4_data/raw_data/NanoSim_DE_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/NanoSim_DE_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4954,7 +4954,7 @@ x23 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p5 <- ggarrange(x19,NULL,x21,NULL,x22,NULL,NULL,x23,NULL,ncol = 9, align = "v",hjust=0)
 
 # R2C2 ONT
-dat <- read.table('data/SIRV-set4_data/raw_data/Bambu_DE_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/Bambu_DE_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4967,7 +4967,7 @@ x24 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
   scale_x_continuous(limits=c(1, 15), breaks = seq(1,15,15))
 
 
-dat <- read.table('data/SIRV-set4_data/raw_data/IsoQuant_DE_R2C2_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/IsoQuant_DE_R2C2_ONT.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -4982,7 +4982,7 @@ x26 <- ggplot(dat,aes(x = log2(truth_normalized*10^6+1), y = log2(est_normalized
 p6 <- ggarrange(x24,NULL,NULL,NULL,x26,NULL,NULL,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 # cDNA Illumina
-dat <- read.table('data/SIRV-set4_data/raw_data/RSEM_H1-DE_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/SIRV-set4_data/raw_data/RSEM_H1-DE_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 dat$density <- get_density(dat$truth_normalized, dat$est_normalized, h = c(5, 5),n = 100)
@@ -5015,7 +5015,7 @@ ggsave(filename = paste0(outdir, "/fig_SIRV_scatter",".pdf"),
 
 ## Scatter plot for simulation data---------------------------------------------------------------------------------------------------
 ## Human cDNA ONT
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5030,7 +5030,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5045,7 +5045,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAIR_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAIR_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5060,7 +5060,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAMES_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAMES_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5075,7 +5075,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoQuant_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoQuant_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5090,7 +5090,7 @@ x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/LAPA_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/LAPA_human_simulation_cDNA_ONT.tsv',header = T, sep = "\t");
 
 
 x6 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5109,7 +5109,7 @@ p1 <- ggarrange(x1,x2,x3,x4,x5,NULL,x6,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 
 ## Human cDNA PacBio
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5124,7 +5124,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5140,7 +5140,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAIR_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAIR_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5155,7 +5155,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoQuant_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoQuant_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5171,7 +5171,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoTools_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoTools_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5186,7 +5186,7 @@ x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/LAPA_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/LAPA_human_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x6 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5205,7 +5205,7 @@ p2 <- ggarrange(x1,x2,x3,NULL,x4,x5,x6,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 
 ## Human cDNA Illumina
-dat <- read.table('data/Simulation_data/simulation_raw_data/RSEM_human_simulation_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/RSEM_human_simulation_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5224,7 +5224,7 @@ p3 <- ggarrange(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,x1,ncol = 9, align = "v"
 
 
 ## Mouse dRNA ONT
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5240,7 +5240,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5255,7 +5255,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAIR_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAIR_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5270,7 +5270,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAMES_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAMES_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5285,7 +5285,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoQuant_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoQuant_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5300,7 +5300,7 @@ x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/LAPA_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/LAPA_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x6 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5315,7 +5315,7 @@ x6 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/NanoSim_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/NanoSim_mouse_simulation_dRNA_ONT.tsv',header = T, sep = "\t");
 
 
 x7 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5334,7 +5334,7 @@ p4 <- ggarrange(x1,x2,x3,x4,x5,NULL,x6,x7,NULL,ncol = 9, align = "v",hjust=0)
 
 
 ## mouse cDNA PacBio
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5349,7 +5349,7 @@ x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/Bambu_LR_annotation_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5365,7 +5365,7 @@ x2 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/FLAIR_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/FLAIR_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5380,7 +5380,7 @@ x3 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoQuant_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoQuant_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5396,7 +5396,7 @@ x4 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/IsoTools_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/IsoTools_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5411,7 +5411,7 @@ x5 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2
 
 
 
-dat <- read.table('data/Simulation_data/simulation_raw_data/LAPA_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/LAPA_mouse_simulation_cDNA_PacBio.tsv',header = T, sep = "\t");
 
 
 x6 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
@@ -5430,7 +5430,7 @@ p5 <- ggarrange(x1,x2,x3,NULL,x4,x5,x6,NULL,NULL,ncol = 9, align = "v",hjust=0)
 
 
 ## mouse cDNA Illuminah
-dat <- read.table('data/Simulation_data/simulation_raw_data/RSEM_mouse_simulation_cDNA_Illumina.tsv',header = T, sep = "\t");
+dat <- read.table('Challenge2_Figures_Data/Simulation_data/simulation_raw_data/RSEM_mouse_simulation_cDNA_Illumina.tsv',header = T, sep = "\t");
 
 
 x1 <- ggplot(data = dat, mapping = aes(x = log2(normalized_truth_TPM+1),y = log2(normalized_estimated_TPM+1))) + 
