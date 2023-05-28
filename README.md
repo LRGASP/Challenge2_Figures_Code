@@ -16,7 +16,7 @@ Download, extract, and run the R programs to build figures into the `output` dir
 
 ```
 synapse get syn51401823
-unzip -q ~/tmp/Challenge2_Figures_Data.zip
+unzip -q Challenge2_Figures_Data.zip
 Rscript Code_figures_Challenge2_LRGASP_paper_figure.R
 Rscript Code_figures_Challenge2_LRGASP_supplementary_figures.R 
 ```
