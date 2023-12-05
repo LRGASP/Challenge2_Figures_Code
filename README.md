@@ -9,13 +9,16 @@ git clone git@github.com:LRGASP/Challenge2_Figures_Code.git
 cd Challenge2_Figures_Code
 ```
 
-The data file is `Challenge2_Figures_Data.zip`, Synapse id  `syn51401823`.
-Install synapseclient if necessary: `pip install synapseclient`
 
-Download, extract, and run the R programs to build figures into the `output` directory:
+Download the data files from:
 
 ```
-synapse get syn51401823
+https://cgl.gi.ucsc.edu/data/LRGASP/paper/Challenge2_Figures_Data.zip
+```
+
+Run the R programs to build figures into the `output` directory:
+
+```
 unzip -q Challenge2_Figures_Data.zip
 Rscript Code_figures_Challenge2_LRGASP_paper_figure.R
 Rscript Code_figures_Challenge2_LRGASP_supplementary_figures.R 
